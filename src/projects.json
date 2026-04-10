@@ -1,0 +1,124 @@
+{
+  "angles": [
+    {
+      "angl": 22.5,
+      "img": "imgs/Transport_management.mp4",
+      "link": "https://google.com",
+      "translations": {
+        "en": {
+          "title": "Transport Management System",
+          "description": "A comprehensive fleet management solution with real-time tracking, route optimization, and analytics dashboard."
+        },
+        "de": {
+          "title": "Transportmanagementsystem",
+          "description": "Eine umfassende Flottenmanagement-Lösung mit Echtzeit-Tracking, Routenoptimierung und Analyse-Dashboard."
+        }
+      }
+    },
+    {
+      "angl": 67.5,
+      "img": "imgs/Flask-App.mp4",
+      "link": "https://google.com",
+      "translations": {
+        "en": {
+          "title": "Flask Web Application",
+          "description": "Full-stack web application built with Flask framework, featuring user authentication and RESTful API."
+        },
+        "de": {
+          "title": "Flask Webanwendung",
+          "description": "Full-Stack-Webanwendung mit Flask-Framework, mit Benutzerauthentifizierung und RESTful-API."
+        }
+      }
+    },
+    {
+      "angl": 112.5,
+      "img": "imgs/Aptiv.mp4",
+      "link": "https://google.com",
+      "translations": {
+        "en": {
+          "title": "Aptiv Dashboard",
+          "description": "Interactive dashboard for autonomous driving systems with real-time sensor data visualization."
+        },
+        "de": {
+          "title": "Aptiv Dashboard",
+          "description": "Interaktives Dashboard für autonome Fahrsysteme mit Echtzeit-Visualisierung von Sensordaten."
+        }
+      }
+    },
+    {
+      "angl": 157.5,
+      "img": "imgs/3D-Clock.mp4",
+      "link": "https://google.com",
+      "translations": {
+        "en": {
+          "title": "3D Interactive Clock",
+          "description": "Fully interactive 3D clock with realistic materials and animations."
+        },
+        "de": {
+          "title": "Interaktive 3D-Uhr",
+          "description": "Vollständig interaktive 3D-Uhr mit realistischen Materialien und Animationen."
+        }
+      }
+    },
+    {
+      "angl": 202.5,
+      "img": "imgs/workingOn.mp4",
+      "link": "_blanc",
+      "translations": {
+        "en": {
+          "title": "Coming Soon",
+          "description": "Exciting new project currently in development. Stay tuned!"
+        },
+        "de": {
+          "title": "Demnächst",
+          "description": "Spannendes neues Projekt derzeit in Entwicklung. Bleiben Sie dran!"
+        }
+      }
+    },
+    {
+      "angl": 247.5,
+      "img": "imgs/workingOn.mp4",
+      "link": "_blanc",
+      "translations": {
+        "en": {
+          "title": "Coming Soon",
+          "description": "Exciting new project currently in development. Stay tuned!"
+        },
+        "de": {
+          "title": "Demnächst",
+          "description": "Spannendes neues Projekt derzeit in Entwicklung. Bleiben Sie dran!"
+        }
+      }
+    },
+    {
+      "angl": 292.5,
+      "img": "imgs/workingOn.mp4",
+      "link": "_blanc",
+      "translations": {
+        "en": {
+          "title": "Coming Soon",
+          "description": "Exciting new project currently in development. Stay tuned!"
+        },
+        "de": {
+          "title": "Demnächst",
+          "description": "Spannendes neues Projekt derzeit in Entwicklung. Bleiben Sie dran!"
+        }
+      }
+    },
+    {
+      "angl": 337.5,
+      "img": "imgs/workingOn.mp4",
+      "link": "_blanc",
+      "translations": {
+        "en": {
+          "title": "Coming Soon",
+          "description": "Exciting new project currently in development. Stay tuned!"
+        },
+        "de": {
+          "title": "Demnächst",
+          "description": "Spannendes neues Projekt derzeit in Entwicklung. Bleiben Sie dran!"
+        }
+      }
+    }
+  ]
+}

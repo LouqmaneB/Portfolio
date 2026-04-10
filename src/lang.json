@@ -1,0 +1,24 @@
+{
+  "translations": {
+    "en": {
+      "greeting": "Welcome to My Portfolio",
+      "role": "Creative Developer & 3D Artist",
+      "paragraph1": "Motivated junior developer focused on building clean and user-friendly web applications.",
+      "paragraph2": "Always learning, improving, and eager to grow in a professional environment.",
+      "expertiseHeading": "Expertise",
+      "currentProjectHeading": "Currently Working On",
+      "projectHighlight": "Building an immersive showcase of my work",
+      "scrollHint": "Scroll to explore projects"
+    },
+    "de": {
+      "greeting": "Willkommen in meinem Portfolio",
+      "role": "Kreativer Entwickler & 3D-Künstler",
+      "paragraph1": "Motivierter Junior-Entwickler mit Fokus auf die Entwicklung sauberer und benutzerfreundlicher Webanwendungen.",
+      "paragraph2": "Ständig am Lernen, mich verbessern und bereit, mich in einem professionellen Umfeld weiterzuentwickeln.",
+      "expertiseHeading": "Expertise",
+      "currentProjectHeading": "Derzeit in Arbeit",
+      "projectHighlight": "Entwicklung einer immersiven Präsentation meiner Arbeiten",
+      "scrollHint": "Scrollen, um Projekte zu entdecken"
+    }
+  }
+}
