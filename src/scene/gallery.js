@@ -4,16 +4,14 @@ import projectsData from "../projects.json";
 export function createGallery(scene, r, onVideoClick) {
   const ide = new THREE.PlaneGeometry(r * 0.795, r * 0.795, 32, 32);
 
-  const angles = projectsData.angles.map((item) => ({
-    ...item,
-    img: import.meta.env.BASE_URL + item.img,
-  }));
+  const angles = projectsData.angles
 
   const group = new THREE.Group();
 
   angles.forEach((ele) => {
     const video = document.createElement("video");
     video.src = ele.img;
+    video.crossOrigin = "anonymous";
     video.loop = true;
     video.muted = true;
     video.playsInline = true;
@@ -50,10 +48,7 @@ export function createGallery(scene, r, onVideoClick) {
     pln1.lookAt(0, 0, 0);
 
     pln1.userData = {
-      link: ele.link,
-      title: ele.title,
-      description: ele.description,
-      videoSrc: ele.img,
+      ele,
       basePosition: pln1.position.clone(),
       videoElement: video,
     };

@@ -6,62 +6,81 @@ import { createModal } from "./components/modal.js";
 
 const TRANSLATION_FILE = new URL("./lang.json", import.meta.url);
 const defaultLang = "en";
+
+const state = {
+  lang: localStorage.getItem("preferredLang") || defaultLang,
+  currentProject: null,
+};
+
 let translations = {};
+let modal;
 
 async function loadTranslations() {
   const response = await fetch(TRANSLATION_FILE);
+
   if (!response.ok) {
-    console.error("Failed to load translations:", response.status, response.statusText);
+    console.error("Failed to load translations");
     return;
   }
+
   translations = await response.json();
 
-  const savedLang = localStorage.getItem("preferredLang") || defaultLang;
   const languageRadios = document.querySelectorAll('input[name="language"]');
   const translatable = document.querySelectorAll("[data-i18n-key]");
-  const langSlider = document.querySelector('.lang-slider');
+  const langSlider = document.querySelector(".lang-slider");
 
-  function translatePage(lang) {
+  function getLangData(project) {
+    return (
+      project.translations?.[state.lang] ||
+      project.translations?.[defaultLang]
+    );
+  }
+
+  function updateModal() {
+    if (!state.currentProject) return;
+
+    const langData = getLangData(state.currentProject);
+
+    modal.update?.(
+      langData?.title,
+      langData?.description
+    );
+  }
+
+  function translate(lang) {
     if (!translations.translations[lang]) {
       lang = defaultLang;
     }
 
+    state.lang = lang;
+    localStorage.setItem("preferredLang", lang);
+
     translatable.forEach((node) => {
       const key = node.dataset.i18nKey;
-      const value = translations.translations[lang]?.[key];
-      if (value) {
-        node.textContent = value;
-      }
+      node.textContent = translations.translations[lang]?.[key] || "";
     });
 
     document.documentElement.lang = lang;
-    languageRadios.forEach((radio) => {
-      radio.checked = radio.value === lang;
-    });
-    
-    updateSliderPosition(lang);
-    
-    localStorage.setItem("preferredLang", lang);
-  }
 
-  function updateSliderPosition(lang) {
-    if (!langSlider) return;
-    
-    if (lang === 'de') {
-      langSlider.style.transform = 'translateX(100%)';
-    } else {
-      langSlider.style.transform = 'translateX(0)';
+    languageRadios.forEach((r) => {
+      r.checked = r.value === lang;
+    });
+
+    if (langSlider) {
+      langSlider.style.transform =
+        lang === "de" ? "translateX(100%)" : "translateX(0)";
     }
+
+    updateModal();
   }
 
   languageRadios.forEach((radio) => {
-    radio.addEventListener("change", (event) => {
-      const newLang = event.target.value;
-      translatePage(newLang);
+    radio.addEventListener("change", (e) => {
+      translate(e.target.value);
     });
   });
 
-  translatePage(savedLang);
+  translate(state.lang);
 }
 
 const scene = new THREE.Scene();
@@ -82,14 +101,20 @@ document.body.appendChild(renderer.domElement);
 const r = 30;
 const environment = setupEnvironment(scene, r);
 
-const modal = createModal();
+modal = createModal();
 const { group } = createGallery(scene, r, (data, videoElement) => {
+  state.currentProject = data;
+
+  const langData =
+    data.translations?.[state.lang] ||
+    data.translations?.[defaultLang];
+
   modal.open(
-    data.videoSrc,
-    data.title,
-    data.description,
+    data.videoSrc || data.img,
+    langData?.title,
+    langData?.description,
     data.link,
-    videoElement,
+    videoElement
   );
 });
 
@@ -123,17 +148,24 @@ window.addEventListener("click", (event) => {
   mouse.y = -(event.clientY / renderer.domElement.clientHeight) * 2 + 1;
 
   raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(group.children);
+  const intersects = raycaster.intersectObjects(group.children, true);
 
   if (intersects.length > 0) {
     const clicked = intersects[0].object;
-    const projectData = clicked.userData;
+    const projectData = clicked.userData.ele;
+
+    state.currentProject = projectData;
+
+    const langData =
+      projectData.translations?.[state.lang] ||
+      projectData.translations?.[defaultLang];
+
     modal.open(
-      projectData.videoSrc,
-      projectData.title,
-      projectData.description,
+      projectData.img,
+      langData?.title,
+      langData?.description,
       projectData.link,
-      projectData.videoElement,
+      projectData.img,
     );
   }
 });

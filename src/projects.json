@@ -2,7 +2,7 @@
   "angles": [
     {
       "angl": 22.5,
-      "img": "imgs/Transport_management.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954501/Transport_management_qonoiz.mp4",
       "link": "https://google.com",
       "translations": {
         "en": {
@@ -17,7 +17,7 @@
     },
     {
       "angl": 67.5,
-      "img": "imgs/Flask-App.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954953/Flask-App_hb2vho.mp4",
       "link": "https://google.com",
       "translations": {
         "en": {
@@ -32,7 +32,7 @@
     },
     {
       "angl": 112.5,
-      "img": "imgs/Aptiv.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954591/Aptiv_e8u5nm.mp4",
       "link": "https://google.com",
       "translations": {
         "en": {
@@ -47,7 +47,7 @@
     },
     {
       "angl": 157.5,
-      "img": "imgs/3D-Clock.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954694/3D-Clock_ycweom.mp4",
       "link": "https://google.com",
       "translations": {
         "en": {
@@ -62,7 +62,7 @@
     },
     {
       "angl": 202.5,
-      "img": "imgs/workingOn.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775952817/workingOn_cwu7ks.mp4",
       "link": "_blanc",
       "translations": {
         "en": {
@@ -77,7 +77,7 @@
     },
     {
       "angl": 247.5,
-      "img": "imgs/workingOn.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775952817/workingOn_cwu7ks.mp4",
       "link": "_blanc",
       "translations": {
         "en": {
@@ -92,7 +92,7 @@
     },
     {
       "angl": 292.5,
-      "img": "imgs/workingOn.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775952817/workingOn_cwu7ks.mp4",
       "link": "_blanc",
       "translations": {
         "en": {
@@ -107,7 +107,7 @@
     },
     {
       "angl": 337.5,
-      "img": "imgs/workingOn.mp4",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775952817/workingOn_cwu7ks.mp4",
       "link": "_blanc",
       "translations": {
         "en": {

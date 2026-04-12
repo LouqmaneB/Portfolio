@@ -87,5 +87,18 @@ export function createModal() {
     }
   });
 
-  return { open, close };
+  modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    close();
+  } else {
+    e.stopPropagation();
+  }
+});
+function update(title, description) {
+  modalTitle.textContent = title;
+  modalDescription.textContent = description;
+}
+
+return { open, update };
+
 }
