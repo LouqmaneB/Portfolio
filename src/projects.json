@@ -3,7 +3,7 @@
     {
       "angl": 22.5,
       "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954501/Transport_management_qonoiz.mp4",
-      "link": "https://google.com",
+      "link": "https://bus-management-system-opal.vercel.app/",
       "translations": {
         "en": {
           "title": "Transport Management System",
@@ -18,7 +18,7 @@
     {
       "angl": 67.5,
       "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954953/Flask-App_hb2vho.mp4",
-      "link": "https://google.com",
+      "link": "https://codesandbox.io/p/github/LouqmaneB/Flask-Transport-Manager/draft/practical-feather",
       "translations": {
         "en": {
           "title": "Flask Web Application",
@@ -33,7 +33,7 @@
     {
       "angl": 112.5,
       "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954591/Aptiv_e8u5nm.mp4",
-      "link": "https://google.com",
+      "link": "_blanc",
       "translations": {
         "en": {
           "title": "Aptiv Dashboard",
@@ -48,7 +48,7 @@
     {
       "angl": 157.5,
       "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954694/3D-Clock_ycweom.mp4",
-      "link": "https://google.com",
+      "link": "https://codesandbox.io/p/github/LouqmaneB/clock_3d/main?import=true",
       "translations": {
         "en": {
           "title": "3D Interactive Clock",
@@ -62,16 +62,16 @@
     },
     {
       "angl": 202.5,
-      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775952817/workingOn_cwu7ks.mp4",
-      "link": "_blanc",
+      "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1776911978/IOT_GPS_Tracking_vshnqx.mp4",
+      "link": "https://louqmaneb.github.io/Bus-Management-System/",
       "translations": {
         "en": {
-          "title": "Coming Soon",
-          "description": "Exciting new project currently in development. Stay tuned!"
+          "title": "Smart Bus GPS Simulation",
+          "description": "IoT-based GPS simulation system for tracking buses in real time. Simulates ESP32 devices sending live location data to power a transport management application."
         },
         "de": {
-          "title": "Demnächst",
-          "description": "Spannendes neues Projekt derzeit in Entwicklung. Bleiben Sie dran!"
+          "title": "Smart Bus GPS Simulation",
+          "description": "IoT-basiertes GPS-Simulationssystem zur Echtzeitverfolgung von Bussen. Simuliert ESP32-Geräte, die Standortdaten an eine Transportmanagement-Anwendung senden."
         }
       }
     },
