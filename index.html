@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Video Gallery - Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CxDZ7wot.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cc6CnMND.css">
+  </head>
+  <body>
+    <!-- Left Side Description Panel -->
+    <div class="info-panel">
+      <div class="info-content">
+        <div class="greeting" data-i18n-key="greeting">
+          Welcome to My Portfolio
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px">
+          <h1 class="name">Louqmane Bamousse</h1>
+          <div class="lang-switcher">
+            <div class="lang-option">
+              <input
+                type="radio"
+                name="language"
+                id="lang-en"
+                value="en"
+                checked
+              />
+              <label for="lang-en">EN</label>
+            </div>
+            <div class="lang-option">
+              <input type="radio" name="language" id="lang-de" value="de" />
+              <label for="lang-de">DE</label>
+            </div>
+            <div class="lang-slider"></div>
+          </div>
+        </div>
+        <h2 class="title" data-i18n-key="role">
+          Creative Developer & 3D Artist
+        </h2>
+
+        <div class="bio">
+          <p id="bio-para-1" data-i18n-key="paragraph1">
+            I create immersive digital experiences combining cutting-edge 3D
+            technology with innovative design.
+          </p>
+          <p id="bio-para-2" data-i18n-key="paragraph2">
+            Passionate about building interactive web applications that push the
+            boundaries of what's possible in the browser.
+          </p>
+        </div>
+
+        <div class="skills">
+          <h3 data-i18n-key="expertiseHeading">Expertise</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Typescript</span>
+            <span>PHP</span>
+            <span>Node.js</span>
+            <span>Three.js</span>
+            <span>React</span>
+            <span>Next.js</span>
+          </div>
+        </div>
+
+        <div class="current-project">
+          <h3 data-i18n-key="currentProjectHeading">Currently Working On</h3>
+          <div class="project-highlight">
+            <div class="project-icon">🔃</div>
+            <div class="project-info">
+              <strong>Interactive 3D Portfolio</strong>
+              <p data-i18n-key="projectHighlight">
+                Building an immersive showcase of my work
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/LouqmaneB"
+            class="social-link"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/louqmane-bamousse/"
+            class="social-link"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:louqmanebamousse@gamil.com" class="social-link"
+            >Email</a
+          >
+        </div>
+
+        <div class="scroll-hint">
+          <span data-i18n-key="scrollHint">Scroll to explore projects →</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Canvas container for Three.js -->
+    <div id="canvas-container"></div>
+
+
+  </body>
+</html>
