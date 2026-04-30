@@ -48,7 +48,7 @@
     {
       "angl": 157.5,
       "img": "https://res.cloudinary.com/diptlwfpq/video/upload/v1775954694/3D-Clock_ycweom.mp4",
-      "link": "https://codesandbox.io/p/github/LouqmaneB/clock_3d/main?import=true",
+      "link": "https://3d-clock-eight.vercel.app/",
       "translations": {
         "en": {
           "title": "3D Interactive Clock",
